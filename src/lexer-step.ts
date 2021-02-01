@@ -3,9 +3,9 @@
     export enum LexerStep
     {
         WaitingForNumber,
+        WaitingForOperator,
         ContinueNumber,
-        ContinueDecimalNumber,
-        WaitingForOperator
+        ContinueDecimalNumber
     }
 }
 

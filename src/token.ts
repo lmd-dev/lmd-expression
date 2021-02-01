@@ -2,7 +2,6 @@ namespace LMD
 {
     export abstract class Token 
     {
-
         /**
          * Is the token an operand ?
          */

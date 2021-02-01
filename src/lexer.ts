@@ -93,7 +93,7 @@ namespace LMD
          * Processes a character when the lexer is waiting for a number 
          * @param character
          */
-        processWaitingForNumber(character: string)
+        private processWaitingForNumber(character: string)
         {
             if (this._startNumber.test(character))
             {
@@ -114,7 +114,7 @@ namespace LMD
          * Processes a character when the lexer is continuing a number
          * @param character
          */
-        processContinueNumber(character: string)
+        private processContinueNumber(character: string)
         {
             if (this._continueNumber.test(character))
             {
@@ -142,7 +142,7 @@ namespace LMD
          * Processes a character when the lexer is continuing a decimal number (after the decimal separator)
          * @param character
          */
-        processContinueDecimalNumber(character: string)
+        private processContinueDecimalNumber(character: string)
         {
             if (this._continueNumber.test(character))
             {
@@ -164,7 +164,7 @@ namespace LMD
          * Processes a character when the lexer is waiting for an operator
          * @param character
          */
-        processWaitingForOperator(character: string)
+        private processWaitingForOperator(character: string)
         {
             if (this._operators.test(character))
             {
@@ -179,7 +179,7 @@ namespace LMD
         /**
          * Creates an operand
          */
-        createOperand()
+        private createOperand()
         {
             this.tokens.push(TokenFactory.createOperand(this.currentOperand));
             this._currentOperand = "";
@@ -188,7 +188,7 @@ namespace LMD
         /**
          * Creates an operator
          */
-        createOperator()
+        private createOperator()
         {
             this.tokens.push(TokenFactory.createOperator(this.currentOperator));
             this._currentOperator = "";
