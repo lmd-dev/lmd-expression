@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "typescript": "^4.1.3"
+  },
+  "name": "lmd-expression",
+  "version": "1.0.2",
+  "description": "Computes simple mathematical expressions. Supported operators : + - * /",
+  "main": "./dist/expression-computer.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Les Moulins du Dev",
+  "license": "ISC"
+}
