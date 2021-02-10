@@ -3,7 +3,7 @@
     "typescript": "^4.1.3"
   },
   "name": "lmd-expression",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Computes simple mathematical expressions. Supported operators : + - * /",
   "main": "./dist/expression-computer.js",
   "directories": {
