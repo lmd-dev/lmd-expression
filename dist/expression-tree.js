@@ -12,7 +12,6 @@ var LMD;
             this.root = null;
             this.currentNode = null;
             this.addTokensToNode(tokens);
-            console.log(this.root);
         }
         addTokensToNode(tokens) {
             if (tokens.length === 0)
